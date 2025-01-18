@@ -1,0 +1,61 @@
+# PAC4 - Programació per a la Ciència de Dades
+
+## Descripció
+Aquest projecte inclou els exercicis de la PAC4. 
+Els exercicis s'han intentat organitzar de la manera més modul·lar possible i es poden executar de forma seqüencial o individual. 
+També s’ha creat un sistema de testing utilitzant **Coverage**, ja que és el paquet que uso a la feina i apart **HTMLTestRunner** no em carregava bé.
+Tots els tests tenen una covertura de més del 90%.
+Tots els fitxers del projecte segueixen la guia d'estil de Python (PEP8), obtenint una nota 10/10 en l'execució de pylint a cadascun d'ells.
+
+## Requisits
+- Python 3.12.4 o superior
+- Instal·lació de les dependències (vegeu la secció **Instal·lació**).
+
+## Instal·lació
+
+1. Clona aquest repositori:
+   ```bash
+   git clone https://github.com/JO-VL/pac4.git
+   cd pac4
+   ```
+
+2. Crea i activa un entorn virtual:
+   ```bash
+   python -m venv entorns/PAC4
+   source entorns/PAC4/bin/activate # Linux/Mac
+   entorns\PAC4\Scripts\activate  # Windows
+   ```
+
+3. Instal·la les dependències:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Ús
+### Executar tots els exercicis:
+```bash
+python main.py
+```
+
+### Executar fins a un exercici específic (per exemple, fins al 4):
+```bash
+python main.py 4
+```
+
+### Executar els tests:
+```bash
+cd tests
+coverage run -m unittest discover
+```
+
+### Comprovar la covertura:
+```bash
+cd tests
+coverage report
+```
+
+## Autor
+- **Nom:** Joan Oriol Vilaseca Lecina
+
+## Llicència
+Aquest projecte està llicenciat sota la Llicència MIT.
